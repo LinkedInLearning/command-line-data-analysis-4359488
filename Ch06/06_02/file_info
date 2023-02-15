@@ -1,0 +1,7 @@
+#!/bin/bash
+
+file=$1
+
+ls -lh ${file}
+echo $(wc -l ${file} | awk '{print $1}') lines
+head -5 ${file}

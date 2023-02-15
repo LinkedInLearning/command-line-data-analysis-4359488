@@ -1,0 +1,21 @@
+#!/bin/bash
+
+case $1 in
+    -h | --help ) echo "usage: $(basename $0) FILE"; exit;;
+esac
+
+if [ $# -ne 1 ]; then
+    echo "error: wrong number of arguments" 1>&2
+    exit 1
+fi
+
+file=$1
+
+if [ ! -f ${file} ]; then
+    echo "error: '$path' - not a file" 1>&2
+    exit 1
+fi
+
+ls -lh ${path}
+echo $(wc -l ${path} | awk '{print $1}') lines
+head -5 ${path}
