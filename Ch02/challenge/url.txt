@@ -1,0 +1,1 @@
+https://query1.finance.yahoo.com/v7/finance/download/NVDA?period1=1644919721&period2=1676455721&interval=1d&events=history&includeAdjustedClose=true
