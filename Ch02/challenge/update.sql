@@ -1,1 +1,1 @@
-UPDATE stocks SET Symbol = 'AAAA' WHERE Symbol IS NULL;
+UPDATE stocks SET Symbol = 'NVDA' WHERE Symbol IS NULL;
