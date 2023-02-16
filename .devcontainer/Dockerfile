@@ -25,7 +25,7 @@ RUN echo 'PATH=${PATH}:/usr/games:/google-cloud-sdk/bin' >> ~/.bashrc
 RUN echo "PS1='$ '" >> ~/.bashrc
 
 # start ssh daemon (must be when container runs)
-RUN echo "test -f /var/run/sshd.pid || (sudo service ssh start > /dev/null)" >> ~/.bashrc
+RUN echo "sudo service ssh start > /dev/null" >> ~/.bashrc
 # trusted host (remove ssh notice)
 RUN echo "ssh-keyscan localhost > ~/.ssh/known_hosts 2>/dev/null" >> ~/.bashrc
 
